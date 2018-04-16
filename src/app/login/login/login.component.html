@@ -1,3 +1,38 @@
-<p>
-  login works!
-</p>
+<div class="mask">
+  <div class="login-form">
+    <div class="logo-wrap">
+      <img src="./assets/images/login/21ux-footer.png" alt="21CN UX">
+    </div>
+    <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm($event,validateForm.value)">
+      <div nz-form-item>
+        <div nz-form-control nzHasFeedback>
+          <nz-input formControlName="userName" [nzPlaceHolder]="'请输入企业账号邮箱'" [nzSize]="'large'">
+            <ng-template #prefix>
+              <i class="anticon anticon-user"></i>
+            </ng-template>
+          </nz-input>
+          <div nz-form-explain *ngIf="getFormControl('userName').dirty&&getFormControl('userName').hasError('email')">邮箱账号格式不正确!</div>
+        </div>
+      </div>
+      <div nz-form-item>
+        <div nz-form-control nzHasFeedback>
+          <nz-input formControlName="password" [nzType]="'password'" [nzPlaceHolder]="'请输入密码'" [nzSize]="'large'">
+            <ng-template #prefix>
+              <i class="anticon anticon-lock"></i>
+            </ng-template>
+          </nz-input>
+          <div nz-form-explain *ngIf="validateForm.controls.password.dirty&&validateForm.controls.password.hasError('required')">请输入密码</div>
+        </div>
+      </div>
+      <div nz-form-item>
+        <div nz-form-control>
+          <label nz-checkbox formControlName="remember">
+            <span>记住我</span>
+          </label>
+          <button nz-button class="login-form-button" [nzType]="'primary'" [nzSize]="'large'">登 录</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="bg-members"></div>

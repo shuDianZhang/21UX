@@ -46,6 +46,8 @@
   </li>
   <nz-input [nzType]="'search'" [nzPlaceHolder]="''" [(ngModel)]="_value" style="width: 200px;" (nzOnSearch)="onSearch($event)"></nz-input>
   <button nz-button [nzType]="'default'">
-    <span>登录</span>
+    <a routerLink="/login" routerLinkActive="active">
+      <span>登录</span>
+    </a>
   </button>
 </ul>

@@ -1,0 +1,42 @@
+.bg-members {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url('../../../assets/images/login/members.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(39, 41, 43, .8);
+}
+.login-form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding: 35px 20px 40px;
+  width: 322px;
+  max-height: 250px;
+  z-index: 3;
+  background: #FFF;
+  border-radius: 4px; 
+}
+.logo-wrap {
+  position: absolute;
+  top: -122px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.login-form-button {
+  width: 100%;
+}
