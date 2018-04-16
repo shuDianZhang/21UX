@@ -1,0 +1,51 @@
+<ul class="header-menu" nz-menu [nzMode]="'horizontal'">
+  <li nz-submenu>
+    <span title>设计协同</span>
+    <ul>
+      <li nz-menu-item>TeamWork</li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>资源中心</span>
+    <ul>
+      <li nz-menu-item>GitLab</li>
+      <li nz-menu-item>Hub</li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>用研工具</span>
+    <ul>
+      <li nz-menu-item>用言</li>
+      <li nz-menu-item>数据实验室</li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>生产创意</span>
+    <ul>
+      <li nz-menu-item>DPL设计模式库</li>
+      <li nz-menu-item>人工智能设计</li>
+      <li nz-menu-item>微秀</li>
+      <li nz-menu-item>云集</li>
+      <li nz-menu-item>营销小程序集</li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>工程调试</span>
+    <ul>
+      <li nz-menu-item>SIMS接口模拟</li>
+      <li nz-menu-item>截屏还原度测试</li>
+      <li nz-menu-item>五度模型</li>
+    </ul>
+  </li>
+  <li nz-submenu>
+    <span title>设计框架</span>
+    <ul>
+      <li nz-menu-item>21Design</li>
+      <li nz-menu-item>OK内核</li>
+    </ul>
+  </li>
+  <nz-input [nzType]="'search'" [nzPlaceHolder]="''" [(ngModel)]="_value" style="width: 200px;" (nzOnSearch)="onSearch($event)"></nz-input>
+  <button nz-button [nzType]="'default'">
+    <span>登录</span>
+  </button>
+</ul>

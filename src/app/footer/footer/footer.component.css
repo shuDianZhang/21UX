@@ -1,0 +1,50 @@
+.footrow{
+	width:1500px;
+	margin-left:300px;
+}
+.foot1{
+	margin-top:45px;
+
+}
+.imm{
+	width:83px;
+	height:42px;
+	padding-left:10px;
+	padding-right:0px;
+}
+a{
+	padding-right:2px;
+	color:#666666;
+}
+.ull{
+	float:left;
+	padding-top:30px;
+	margin-right:25px;
+}
+.ulll{
+	padding-top:30px;
+}
+
+.ul3{
+	padding-top:30px;
+}
+.div1{
+	margin-left:0px;
+	width:210px;
+}
+.div11{
+	float:right;
+	padding-right:0px;
+}
+li{
+	margin-bottom:8px;
+	color:#B4B4B4;
+}
+h3{
+	font-weight:bolder;
+	color:#666666;
+}
+p{
+	text-align:center;
+	margin-top:60px;
+}

@@ -1,0 +1,24 @@
+/* 覆写nz-header的默认样式 */
+
+.ant-layout-header {
+    padding: 0;
+    background: #FFFFFF;
+    line-height: 83px;
+    height: 83px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAEUlEQVQYV2PYsmXLfwYEAHEBPU8GNx5tVhQAAAAASUVORK5CYII=") 2 0 stretch;
+}
+
+.ant-layout-footer {
+    background: #FFFFFF;
+    padding: 61px 0 26px 0;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAEUlEQVQYV2PYsmXLfwYEAHEBPU8GNx5tVhQAAAAASUVORK5CYII=") 2 0 stretch;
+}
+
+.ant-layout-content {
+  background: #FFFFFF;
+  padding: 76px 0 142px 0;
+}

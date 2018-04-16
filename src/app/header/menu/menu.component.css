@@ -1,0 +1,25 @@
+.ant-menu-horizontal{
+  border-bottom:0px;
+}
+.header-menu{
+  height: 82px;
+  margin-left: 50px;
+  width: 1000px;  
+}
+.header-menu>li{
+  font-size: 14px;
+  height: 82px;
+  line-height: 82px;
+
+}
+ nz-input{
+  margin-top:20px;
+  margin-left:120px;
+}
+.ant-btn {
+	padding-left:16px;
+	margin-right:1px;
+	height:30px;
+	margin-bottom:1px;
+
+}

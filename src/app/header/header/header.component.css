@@ -1,0 +1,10 @@
+header{
+  height: 100%;
+  width: 100%;
+}
+
+.home-logo{
+  width: 56px;
+  height: auto;
+  margin:27px 100px auto 320px;
+}
