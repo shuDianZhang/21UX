@@ -36,3 +36,7 @@ body {
 	width: 281px;
 	height: 171px;
 }
+img:hover {
+    opacity:0.7;
+    filter:alpha(opacity=70);
+}

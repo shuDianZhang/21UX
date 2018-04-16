@@ -12,9 +12,9 @@
 	padding-left:10px;
 	padding-right:0px;
 }
-a{
+.linka{
 	padding-right:2px;
-	color:#666666;
+	color: #848484;
 }
 .ull{
 	float:left;
@@ -39,6 +39,7 @@ a{
 li{
 	margin-bottom:8px;
 	color:#B4B4B4;
+	text-decoration:none;
 }
 h3{
 	font-weight:bolder;
@@ -48,3 +49,10 @@ p{
 	text-align:center;
 	margin-top:60px;
 }
+li:hover{
+	color:#0066FF;
+}
+a{
+	text-decoration:none;
+}
+
