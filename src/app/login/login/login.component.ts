@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { NzMessageService } from 'ng-zorro-antd'
 import { Observable } from "rxjs/Observable";
 import { HttpClient, HttpParams } from "@angular/common/http";
@@ -26,14 +27,19 @@ export class LoginComponent implements OnInit {
       password: value.password
     }).subscribe(
       (data) => {
-        if (data.code === 1) {
-          let storage = { "isLoggedIn": true, "email": data.email }
+        let response = { code: 0, email: '', token: '', msg: '' };
+        for (var i in data) {
+          response[i] = data[i];
+        }
+        if (response.code === 1) {
+          let storage = { "isLoggedIn": true, "email": response.email }
           window.localStorage.setItem("privilege", JSON.stringify(storage));
-          window.localStorage.setItem('access_token', data.token)
+          window.localStorage.setItem('access_token', response.token)
           this.createBasicMessage('success', '登录成功');
+          this.router.navigateByUrl("/")
           return;
         }
-        this.createBasicMessage('error', data.msg);
+        this.createBasicMessage('error', response.msg);
       },
       response => {
         console.log("POST call in error", response);
@@ -57,7 +63,7 @@ export class LoginComponent implements OnInit {
     this._message.create(type, msg);
   }
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private _message: NzMessageService) {
+  constructor(private fb: FormBuilder, private http: HttpClient, private _message: NzMessageService, private router: Router) {
     this.validateForm = this.fb.group({
       userName: [null, [this.emailValidator]],
       password: [null, [Validators.required]],
