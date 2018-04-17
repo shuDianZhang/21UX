@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home/home.component';
+import { LayoutComponent } from './layout/layout/layout.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
   {
     path: 'login',
     loadChildren: 'app/login/login.module#LoginModule',
