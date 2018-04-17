@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 // 以下导入第三方模块
 import { NgZorroAntdModule } from 'ng-zorro-antd';
@@ -19,6 +20,7 @@ import { FormsModule } from "@angular/forms";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     NgZorroAntdModule.forRoot(),
     AppRoutingModule,
     HeaderModule,
